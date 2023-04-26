@@ -1,6 +1,5 @@
 
-## Problemas en contabilidad
-**Calcular los impuestos de las facturas sin que den error de diferencia credito-debito**
+## Calcular los impuestos de las facturas sin que den error de diferencia credito-debito
 
 ```python
 move.with_context(check_move_validity=False, move_reverse_cancel=False)
