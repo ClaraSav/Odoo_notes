@@ -4,7 +4,7 @@ Version 16
 
 Ejemplo realizado con el componente QtyAtDateWidget del modulo de sale_stock
 
-```
+```js
 /** @odoo-module **/
 
 import { QtyAtDateWidget } from '@sale_stock/widgets/qty_at_date_widget';

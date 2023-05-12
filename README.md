@@ -4,6 +4,7 @@ Versiones: 12.0, 14.0, 15.0
 
 ### Básico
 - [Crear Vista Formulario](Basico/view_form.md)
+- [Mimetypes](Basico/mimetypes.md)
 
 ### Herramientas de Odoo Utiles
 
