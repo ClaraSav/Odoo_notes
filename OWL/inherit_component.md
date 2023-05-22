@@ -78,5 +78,16 @@ const PosAdyenPaymentScreen = PaymentScreen => class extends PaymentScreen {
         ...
 }
 
+```
+
+Los js del punto de venta se cargan en el manifest de la siguiente manera:
+```python
+'assets': {
+    'point_of_sale.assets': [
+        'custom_pos/static/src/js/**/*',
+    ],
+},
+```
+
 
 
