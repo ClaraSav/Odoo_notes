@@ -2,6 +2,8 @@
 
 Version 16
 
+### Parte 1: backend
+
 Ejemplo realizado con el componente QtyAtDateWidget del modulo de sale_stock
 
 ```js
@@ -43,3 +45,38 @@ En el manifest de nuestro modulo tendremos que agregar los assets de la siguient
 ```
 
 Se puede colocar la ruta especifica. En este caso se colocó el * para agregar todos los archivos encontrados.
+
+
+### Parte 2: Punto de Venta
+
+Para heredar del punto de venta es un poco distinto y mas sencillo, debido a que ya existe ```Registries``` que nos facilita bastante.
+
+
+El siguiente ejemplo nos inicializa el numpadMode (la seleccion de botones cantidad, descuento y precio) como vacio o sin ninguna opcion seleccionada.
+
+```js
+odoo.define('custom_pos.models', function (require) {
+"use strict";
+
+var { PosGlobalState } = require('point_of_sale.models');
+const Registries = require('point_of_sale.Registries');
+
+const CustomPosGlobalState = (PosGlobalState) => class CustomPosGlobalState extends PosGlobalState {
+    constructor(obj) {
+        super(obj);
+        this.numpadMode = '';
+    }
+}
+Registries.Model.extend(PosGlobalState, CustomPosGlobalState);
+
+});
+```
+En este caso estamos extendiendo un model, para hacerlo con un Componente de OWL es basicamente lo mismo pero cambiando ```Registries.Model.extend``` por ```Registries.Component.extend``` y la cabecera de la herencia seria:
+
+```js
+const PosAdyenPaymentScreen = PaymentScreen => class extends PaymentScreen {
+        ...
+}
+
+
+

@@ -12,7 +12,7 @@ Donde se descarga un archivo excel.
 
 Dependiendo del tipo de documento a descargar se puede ser mas especifico de acuerdo a su mimetype. 
 
-Acá una recopilació de algunos:
+Acá una recopilación de algunos:
 - javascript: 'application/javascript'
 - xls: 'application/vnd.ms-excel'
 - xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'

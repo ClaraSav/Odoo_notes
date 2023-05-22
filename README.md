@@ -1,6 +1,6 @@
 ## Notas y Hacks de Odoo - Explicadas en Español
 
-Versiones: 12.0, 14.0, 15.0
+Versiones: 11.0, 12.0, 13.0, 14.0, 15.0
 
 ### Básico
 - [Crear Vista Formulario](Basico/view_form.md)
