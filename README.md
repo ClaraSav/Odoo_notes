@@ -21,3 +21,6 @@ Versiones: 11.0, 12.0, 13.0, 14.0, 15.0
 
 ### Nómina
 
+
+### PostgreSQL
+- [Consultar un campo traducido por sql](Postgres/consult_translate_fields.md)
