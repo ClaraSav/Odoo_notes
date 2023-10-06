@@ -28,3 +28,4 @@ Versiones: 11.0, 12.0, 13.0, 14.0, 15.0
 
 ### Hacks
 - [Insertar Imagen en Excel](Hacks/image_in_excel.md)
+- [Tratar grandes cantidades de información sin que se caiga el proceso](Hacks/lot_logic.md)
