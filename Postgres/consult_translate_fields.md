@@ -16,3 +16,9 @@ self.env.cr.execute("SELECT name::json->%s AS name FROM crm_team", (self.env.use
 
 
 ```
+
+NOTA: si el idioma no se encuentra entonces retornará None, por eso se puede hacer uso de COALESCE para pasar un idioma por defecto
+
+```sql
+COALESCE(name::json->%s, name::json->'en_US')
+```
