@@ -16,7 +16,7 @@ Versiones: 11.0, 12.0, 13.0, 14.0, 15.0
 - [Recalcular Impuestos en una Factura](Contabilidad/calculate_tax_account_move.md)
 
 ### OWL
-- [Heredar un componente de OWL](OWL/inherit_component.md)
+- [Modificando un Componente existente de OWL](OWL/inherit_component.md)
 
 
 ### Nómina

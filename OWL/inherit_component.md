@@ -1,4 +1,4 @@
-## Vista Formulario Odoo
+## Modificando un Componente existente de OWL  
 
 ### Parte 1: backend
 
