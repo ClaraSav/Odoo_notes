@@ -1,8 +1,8 @@
 ## Vista Formulario Odoo
 
-Version 16
-
 ### Parte 1: backend
+
+### **Version 16:** ###  
 
 Ejemplo realizado con el componente QtyAtDateWidget del modulo de sale_stock
 
@@ -47,7 +47,32 @@ En el manifest de nuestro modulo tendremos que agregar los assets de la siguient
 Se puede colocar la ruta especifica. En este caso se colocó el * para agregar todos los archivos encontrados.
 
 
+### **Version 17:** ###  
+
+
+```js
+/** @odoo-module **/
+
+import { QtyAtDateWidget } from "@sale_stock/widgets/qty_at_date_widget";
+import { patch } from "@web/core/utils/patch";
+
+
+patch(QtyAtDateWidget.prototype, {
+    initCalcData() {
+        /** Acá lo que se le va a agregar **/
+        return this._super();
+    },
+
+    /** Acá metodos adicionales **/
+
+});
+
+```
+
+
 ### Parte 2: Punto de Venta
+
+### **Version 16:** ###  
 
 Para heredar del punto de venta es un poco distinto y mas sencillo, debido a que ya existe ```Registries``` que nos facilita bastante.
 
